@@ -23,13 +23,13 @@ import android.content.DialogInterface;
 public class Main2Activity extends AppCompatActivity {
     Random rand= new Random();
     int z= rand.nextInt(10);
-    String wordarray[]= {"liver","assam","point","start","class","datum","cross","devil","learn","stump"};
+    String wordarray[]= {"liver","assam","point","start","class","datum","cross","devil","learn","stump","cricket"};
     String word= wordarray[z];
     String HINT="HINT : ";
     StringBuilder answer= new StringBuilder("*****");
     Button enter;
     Button guess_bt;
-    
+
     String edit2;
     TextView edit;
 
@@ -37,7 +37,7 @@ public class Main2Activity extends AppCompatActivity {
 
     private int count=10;
     TextView left;
-    
+
 
 
 
@@ -83,6 +83,7 @@ public class Main2Activity extends AppCompatActivity {
                 break;
             case 9 : HINT=(" i break that..when i bowl");
                 break;
+            case 10 : HINT=("sachin tendulkar plays it") ;   
 
             default:  HINT=("");
                 break;
@@ -151,7 +152,7 @@ public class Main2Activity extends AppCompatActivity {
 
                                                    }
 
-                                               
+
 
 
 
@@ -174,14 +175,14 @@ public class Main2Activity extends AppCompatActivity {
 
 
 
-      
+
 
 }
 
 
         public void buttonClick(View v)
         {
-            
+
             AlertDialog.Builder builder = new AlertDialog.Builder(Main2Activity.this);
             builder.setTitle("HINT for the word is ");
             final EditText hnt = new EditText(Main2Activity.this);
@@ -211,4 +212,3 @@ public class Main2Activity extends AppCompatActivity {
 
 
     }
-
